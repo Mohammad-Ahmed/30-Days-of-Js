@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 Day Of JavaScript</title>
+</head>
+<body>
+
+    <script>
+        /* 
+        // SECTION 1 : 
+
+        // Primitive Data Types: This Data Types are not Modifiable
+        let word = 'JavaScript';
+        word[0] = 'A';
+        console.log(word)
+        // String data types are not modifiable means they are immutable.
+
+        let num1 = 2, num2=3;
+        let js='J', py='J';
+        console.log(num1==num2, js==py)
+
+        // Non-Primitive Data Types: This Data Types are Modifiable
+        let nums = [10, 20, 30];
+        nums[0] =100;
+        console.log(nums)
+
+        let userDetails = {
+            name: "ahmed",
+            role: "Programmer",
+            age: 20,
+            country: "India"
+        };
+        console.log(userDetails)
+        */
+
+
+        // SECTION 2 : 
+        // Using Math Object in JavaScript.
+        /*
+        const PIE = Math.PI
+        console.log(PIE);
+        console.log(Math.round(PIE), "round")
+        console.log(Math.floor(PIE), "floor")
+        console.log(Math.ceil(PIE), "ceil")
+        console.log(Math.min(4, 2), "Min")
+        console.log(Math.max(4, 2), "max")
+
+        const randNum = Math.random();
+            console.log(Math.round(randNum*101))
+
+        console.log(Math.abs(-10), "Absolute")
+        console.log(Math.sqrt(25), "Square Root")
+        console.log(Math.pow(3, 2), "Power")
+        */
+        //    Random Number Generator
+        // let num = Math.random() * 11;
+        // console.log(Math.round(num))
+
+
+        // String Operations : 
+        // 1. concatenation : using + symbol
+        // 2. Long String literal : use \ at the end of the string
+        // 3. Escape Sequences : 
+        // 4. Template Literal : like f string in python. Here we use backtick (`), $ symbol and curly braces{}. example below
+            // let num1 = 2, num2 =3;
+            // console.log(`The Addition of ${num1} and ${num2} is : ${num1+num2}`);
+
+        
+        // String Methods : 
+
+        // let js = "JavaScript";
+        // console.log(js.length);
+        // console.log(js[0])
+        // console.log(js[js.length-1])
+        // console.log(js.toUpperCase())
+        // console.log(js.toLowerCase())
+        // console.log(js.substr(4, 6))
+        // console.log(js.substring(0, 4))
+
+        // let word = "30 Days of JavaScript";
+        // console.log(word.split());
+        // console.log(word.split(' '))
+
+        // console.log(word.trim())  // trim method removes the whitespaces in the string.
+
+        // console.log(word.includes("of"));
+
+        // string.replace(oldString, newString);
+        // console.log(word.replace("JavaScript", "Python"));
+
+        // console.log(word.charAt(0))
+        // console.log(word.charCodeAt(4))  // displays the ascii code of the character.
+
+        // console.log(word.indexOf("3"))
+        // console.log(word.lastIndexOf("t"))
+        
+
+        // console.log(word.concat(" Course"));
+
+        // console.log(word.startsWith("30"))
+        // console.log(word.endsWith("JavaScript"))
+
+        // console.log(word.search("of"))
+
+        // console.log(word.match("of"))   // remaining
+        // let word = "this is for the rain first time SPAIN with me 01234";
+        // console.log(word.match(/ain/))
+        // console.log(word.match(/ain/g))
+        // console.log(word.match(/ain/gi))
+        // console.log(word.match(/[a-f]/g))
+        // console.log(word.match(/[A-D]/))
+
+        // string.match(regexp) : 
+        // g and i -> g to search the word for globally and i for case insensitive
+        // to search for number in the string then -> /\d+/g
+        // to search for non digit in the string then -> /\D/g
+        // to remove the special character in the string then -> /[a-zA-z0-9]/g
+
+
+
+
+        // console.log(word.repeat(5))
+
+
+        // SECTION 3 : Checking data types and casting
+
+        // let firstName = "Harris"
+        // console.log(typeof firstName)
+        // console.log(typeof NaN)
+
+
+        // String to int conversion.
+        // parseInt, Number(), Plus Sign(+)
+        // let num = '10'
+        // let numInt = parseInt(num)
+        // let numInt = Number(num)
+        // let numInt = +num
+        // console.log(`${typeof numInt} value is ${numInt}`)
+
+
+        // String to Float conversion.
+        // parseFloat, Number, Plus Sign(+)
+
+        // let nums='10.11'
+        // let numsFloat=Number(nums)
+        // console.log(numsFloat)
+
+
+        // Float to int Conversion.
+        // parseInt()
+
+        // let num1 = 10.23
+        // let num2 = parseInt(num1)
+        // console.log(num2)
+
+
+
+
+        // Exercises Day 02:
+        /*
+        let challenge = '30 Days of JavaScript'
+        let companies = 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'
+        console.log(challenge)
+        console.log(challenge.length)
+        console.log(challenge.toUpperCase())
+        console.log(challenge.toLowerCase())
+        console.log(challenge.substr(3, 21))
+        console.log(challenge.substring(0, 3))
+        console.log(challenge.includes("Script"))
+        console.log(challenge.split(' '))
+        console.log(companies.split(','))
+        console.log(challenge.replace("JavaScript", "Python"))
+        console.log(challenge.charAt(15))
+        console.log(challenge.charCodeAt('J'))
+        console.log(challenge.indexOf('a'))
+        console.log(challenge.search('of'))
+        console.log(challenge.match('a'))
+        console.log(challenge.repeat(2))
+        */
+
+
+        // let numStr = '10'
+        // let newIntNum = +numStr
+        // let numInt =10
+        // console.log(typeof newIntNum == typeof numInt)
+
+        // let roundFloat = Math.round(parseFloat('9.8'))
+        // console.log(roundFloat)
+
+        // let str1 = 'python', str2='jargon'
+        // console.log(`${str1.includes('on')} ${str2.includes('on')} `)
+
+        // let str = 'I hope this course is not full of jargon.'
+        // console.log(str.includes('jargon'))
+
+        // let num = Math.round(Math.random()*101)
+        // console.log(num)
+
+
+        // let str = 'Love is the best thing in this world. Some found their love and some are still looking for their love';
+        // let str1 = str.match(/love/gi)
+        // console.log(str1.length)
+
+        // let str = 'You cannot end a sentence with because because because is a conjunction'
+        // let strCount = str.match(/because/gi)
+        // console.log(strCount.length)
+
+
+        // const str ='%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
+        // console.log(str.replace(/[^a-z A-Z]/g, ""))
+
+
+        let str = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+        numberStr = str.match(/(\d+)/g)
+        console.log( +numberStr[0] + +numberStr[1] + +numberStr[2] )
+
+
+    </script>
+    
+</body>
+</html>

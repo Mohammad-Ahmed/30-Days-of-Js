@@ -1,0 +1,31 @@
+Print output to the console then
+	console.log(param1, param2, param3);
+
+Print string to the console then
+	console.log("param1", 'param2', `param3`);
+
+	console.log() can also perform Mathematical Calculations also
+
+
+Comments in JavaScript
+
+	// this is single line comment
+	/* this is multi line comment */
+
+Data Types in JavaScript
+
+1. Primitive Data Types:
+	String, Number, Boolean, undefined, Null and Symbol.
+
+2. Non-Primitive Data Types:
+	Object, Arrays
+
+Checking the data types:
+	typeof keyword is used.
+
+Variable in JavaScript:
+	let, var, const
+
+	let -> for a variable that changes to different value
+	const -> a value that is fixed and not changing
+
