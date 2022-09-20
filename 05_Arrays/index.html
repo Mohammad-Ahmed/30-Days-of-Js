@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 Arrays in JavaScript</title>
+</head>
+<body>
+    <script>
+        // let arr = new Array()
+        // console.log(arr)
+
+        // let numbers = [1, 2, 3, 4, 10]
+        // console.log(`Numbers : ${numbers}, Length : ${numbers.length}`)
+
+
+    // const arr = [
+    //     'Asabeneh',
+    //     250,
+    //     true,
+    //     { country: 'Finland', city: 'Helsinki' },
+    //     { skills: ['HTML', 'CSS', 'JS', 'React', 'Python'] }
+    //             ]
+    // console.log(arr)
+
+
+    // let name = "Ahmed"
+    // const charName = name.split("")
+    // console.log(charName)
+
+
+    // const arr = new Array(8)
+    // console.log(arr)
+    // arr[1] = 33
+    // console.log(arr)
+
+
+    // const arr = new Array(5).fill(0)
+    // console.log(arr)
+
+
+    // let numbers = [1, 2, 3, 2, 5]
+    // let num = 5
+    // console.log(numbers.indexOf(2))
+    // console.log(numbers.lastIndexOf(2))
+
+
+    // Array.isArray(array) -> To check the data type is an array or not
+    // console.log(Array.isArray(numbers))
+    // console.log(Array.isArray(num))
+
+    // toString(array)
+    // console.log(numbers.toString())
+
+
+    // slice(startingPos, endingPos)
+    // splice(startingPos, No.OfItemsToBeRemoved, itemsToBeAdded) 
+    // push(num/str)
+    // pop()
+    // shift() -> removes element from beginning of an array
+    // unshift(num) -> add one element at the beginning of an array
+    // reverse() -> reversing array order
+    // sort() -> sort an array
+
+
+    // let num1 = [1, 2, 3]
+    // let num2 = [2, 4, 5]
+    // let num3 = [num1, num2]
+    // console.log(num3[1])
+    // console.log(num3.length)
+
+
+
+    // EXERCISE SECTION:
+
+    // let numb = [1, 2, 3, 4, 5, 6]
+    // let middleEle = (numb.length)/2;
+    // let lastEle = numb.length-1
+    // console.log(numb[0], numb[middleEle], numb[lastEle])
+
+
+    // Declare an array variable name itCompanies and assign initial values Facebook, Google, Microsoft, Apple, IBM, Oracle and Amazon
+
+    let itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'Ibm', 'Oracle', 'Amazon']
+    // console.log(itCompanies)
+    // console.log(itCompanies.length)
+
+    // let middle = (itCompanies.length-1)/2; 
+    // console.log(itCompanies[middle])
+
+
+    // console.log(itCompanies[0].toUpperCase())
+
+    // console.log(`${itCompanies.join(", ")} are good IT Companies.`)
+    // console.log(itCompanies.includes("Apple"))
+
+    // console.log(itCompanies.sort())
+    // console.log(itCompanies.reverse())
+
+    // console.log(itCompanies.slice(0, 3))
+    // console.log(itCompanies.shift())
+    // console.log(itCompanies.pop())
+    // console.log(itCompanies)
+    // itCompanies = []
+    // console.log(itCompanies)
+
+
+
+    // let text ='I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+    // let newText = text.replace(/[^a-z A-Z]/g, "")
+    // let strArray = newText.split(" ")
+    // console.log(newText)
+    // console.log(strArray)
+    // console.log(strArray.length)
+
+
+    // const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+    // shoppingCart.unshift('Meat')
+    // shoppingCart.push('Sugar')
+    // shoppingCart.splice(4, 1)
+
+    // let index = shoppingCart.indexOf("Tea")
+    // shoppingCart[index] = "Green Tea"
+
+    // console.log(shoppingCart)
+
+
+    // const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+    // const backEnd = ['Node','Express', 'MongoDB']
+
+    // const fullStack = [frontEnd, backEnd]
+    // console.log(fullStack)
+    // document.write(fullStack)
+
+
+
+    const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+    ages.sort()
+    let lastIndex = ages.length-1
+
+    console.log(ages[0])
+    console.log(ages[lastIndex])
+    console.log(ages[lastIndex]-ages[0])
+
+    </script>
+</body>
+</html>
