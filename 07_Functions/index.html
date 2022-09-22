@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 JavaScript Functions</title>
+</head>
+<body>
+    <script>
+
+        /*
+        // declaring a function..
+        function funcName(){
+            // code goes here
+        }
+        funcName()
+
+
+        function square()
+        {
+            let num=2;
+            let sq = num*num
+            document.write(sq)
+        }
+        square()
+
+
+        function sumTwoNums(){
+            let num1 = 10
+            let num2 = 22
+            let addition = num1+num2
+            // document.writeln(`<br>${addition}`)
+            return addition
+        }
+        document.write("<br>" +sumTwoNums())
+
+
+        function square(side){
+            return side**2
+        }
+        document.write(`<br> ${square(5)}`)
+
+        // ARROW FUNCTION
+        const areaOfCircle = (radius) =>{
+            let area = Math.PI * radius * radius
+            return area
+        }
+        document.write(`<br>${areaOfCircle(3)}`)
+
+
+        // ARGUMENTS FUNCTION -> Object
+        function sumAllNums(){
+            console.log(arguments)
+        }
+        sumAllNums(1, 2, 3, 4, 5)
+
+
+        // ...ARGS FUNCTION -> Array
+        const sumAll = (...args) =>{
+            console.log(args)
+        }
+        sumAll(1, 2, 3, 4, 5, 6, 7)
+
+
+        const anonymousFunc = function(){
+            console.log("Hello this text if from the anonymous function.")
+        }
+        anonymousFunc()
+
+        let squar = function(n){
+            return n**2
+        }
+        console.log(squar(2))
+
+
+        // Self Invoking Function
+        let squareNum = (function(n){
+            console.log(n*n)
+        })(10)
+
+        let newNum = (function(a){
+            return a+5
+        })(5)
+        console.log(newNum)
+
+
+        const cube = num =>{
+            return num**3
+        }
+        console.log(cube(3))
+
+
+
+
+        let changeToUpperCase = arr =>{
+            const newArr = []
+
+            for(const ele of arr){
+                newArr.push(ele.toUpperCase())
+            }
+            return newArr
+        }
+        const countries = ['Finland', 'Sweden', 'Norway', 'Denmark', 'Iceland']
+        console.log(changeToUpperCase(countries))
+
+
+        function greetingName(name = "Ahmed"){
+            return `Hello ${name}. How are You!`
+        }
+        console.log(greetingName())
+        */
+
+        
+        
+        // Exercise Section :
+        /*
+        const areaOfRectangle = (length, width) =>{
+            let area = length * width
+            console.log(area)
+        }
+        areaOfRectangle(10, 2)
+
+
+        const convertCelsiusToFahrenheit = (celcius) => {
+            let Farenheit = (celcius * 9/5) + 32
+            return Farenheit
+        }
+        console.log(convertCelsiusToFahrenheit(100))
+
+
+        const bmi = (weight, height) =>{
+            let res = weight / (height*0.3048)*(height*0.3048)
+            
+            // return res;
+            if(res < 18.5) return "Underweight"
+            else if(res <25  && res > 18.5) return "Normal"
+                else if(res <30 && res > 25) return "Overweight"
+                    else return "Obsese"
+        }
+        console.log(bmi(65, 2))
+
+
+        const printArray = (arr) =>{
+            for(let e of arr){
+                console.log(e)
+            }
+        }
+        let numbers = [1, 2, 5, 28, 13]
+        printArray(numbers)
+
+
+        const swapValue = (x, y) =>{
+            let temp = x
+            x = y
+            y = temp
+
+            console.log(`Value after swapping x=${x} and y=${y}`)
+        }
+        swapValue(3,10)
+
+
+        // const sumOfAllNumbers = (...args) =>{
+        //     let sum = 0;
+        //     for(let e of args){
+        //         sum+=e
+        //     }
+        //     return sum
+        // }
+
+        // console.log(sumOfAllNumbers(1, 2, 3))
+        // console.log(sumOfAllNumbers(1, 2, 3, 4))
+
+
+        function hexaGenerator(){
+            let hexaValue = "0123456789abcdef"
+            let lengthexa = hexaValue.length
+            let str = "#"
+            for(let i=1; i<7; i++)
+            {
+                str = str + hexaValue.charAt(Math.random() *(lengthexa))
+            }
+            console.log(str)
+        }
+        hexaGenerator()
+
+        */
+
+        /*
+        const userIdGenerator = (numChars, numIds) =>{
+            let alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+            let alphaLength = alpha.length
+            
+
+            for(let i=1; i<=numChars; i++)
+            {
+                let res = ""
+                for(let i=1; i<=numIds; i++){
+                    res += alpha.charAt(Math.floor(Math.random(alphaLength) * (alphaLength)))
+                }
+                console.log(res)
+            }
+            
+        }
+        let inputsCharacters = prompt("Enter the Number of Characters : ")
+        let inputIds = prompt("Enter the Number of IDs you want : ")
+        userIdGenerator(inputsCharacters, inputIds)
+        */
+    
+    const uniqueArrayNumbers = () =>{
+        let arr = []
+
+        while(arr.length<7){
+            let r = Math.floor(Math.random()*10)
+            if(arr.indexOf(r) == -1 ){
+                arr.push(r)
+            }
+        }
+        console.log(arr)
+    }
+    uniqueArrayNumbers()
+
+    </script>
+</body>
+</html>
