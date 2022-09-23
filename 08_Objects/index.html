@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 - Objects in JavaScript</title>
+</head>
+<body>
+    <script>
+        // Creating a empty object
+        const obj = {}
+        // console.log(typeof obj)
+
+        const rectangle = {
+            length : 20,
+            breadth : 10
+        }
+        // console.log(rectangle)
+
+
+        const person = {
+            fName : "Ahmed",
+            lName : "Panjwani",
+            age : 20,
+            location : "Buldhana",
+            skills : ['C', 'C++', 'Core Java', 'Python', 'Django'],
+            isMarried : false,
+
+            getfullName : function(){
+                return `${this.fName} ${this.lName}`
+            },
+            'Phone Number' : "8379975013"
+        }
+
+        person.nationality = "Indian"
+        person.country = "India"
+        person.title = "Teacher"
+        person.skills.push("MySql")
+        person.skills.push("DataBase")
+        person.isMarried = true
+
+        person.getPersonInfo = function(){
+            let skillWithoutLastSkill = this.skills.splice(0, this.skills.length-1).join(", ")
+            let lastSkill = this.skills.splice(this.skills.length-1)[0]
+
+            let skills = `${skillWithoutLastSkill}, and ${lastSkill}`
+            let fullName = this.getfullName()
+            let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`
+
+            return statement
+        }
+
+        // const copyPerson = Object.assign({}, person)
+        // console.log(copyPerson)
+
+        const objKeys = Object.keys(person)
+        const objValues = Object.values(person)
+        const objEntries = Object.entries(person)
+
+
+        // console.log(objKeys)
+        // console.log(objValues)
+        // console.log(objEntries)
+
+
+        console.log(person.hasOwnProperty('fName'))
+        console.log(person.hasOwnProperty('fullName'))
+
+        // console.log(person)
+        // console.log(person.getPersonInfo())
+        // console.log(person)
+
+        // console.log(person.age)
+        // console.log(person['fName'], person['lName'])
+        // console.log(person.getfullName())
+
+    </script>
+
+    <!-- <script src="scope.js"></script> -->
+</body>
+</html>
