@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sets and Maps in JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // const companies = new Set()
+      // console.log(companies)
+
+      const languages = [
+        "English",
+        "Finnish",
+        "English",
+        "French",
+        "Spanish",
+        "English",
+        "French",
+      ];
+
+      const newSet = new Set(languages);
+      //   console.log(newSet)
+
+      //   for(const ele of newSet){
+      //     console.log(ele)
+      //   }
+
+      const comp = new Set();
+      //   console.log(comp);
+
+      comp.add("Google");
+      comp.add("IBM");
+      comp.add("Microsoft");
+      comp.add("Amazon");
+      //   console.log(comp);
+      //   console.log(comp.size);
+
+      comp.delete("IBM");
+      //   console.log(comp);
+
+      //   console.log(comp.has("IBM"));
+      //   console.log(comp.has("Google"));
+
+      comp.clear();
+      //   console.log(comp);
+
+      const language = [
+        "English",
+        "Finnish",
+        "English",
+        "French",
+        "Spanish",
+        "English",
+        "French",
+      ];
+
+      const langSet = new Set(language);
+
+      const counts = [];
+      const count = {};
+      for (const ele of langSet) {
+        const filteredLang = language.filter((lng) => lng === ele);
+        // console.log(filteredLang)
+        counts.push({ lang: ele, count: filteredLang.length });
+      }
+      //   console.log(counts)
+
+      //   let a = [1, 2, 3, 4, 5];
+      //   let b = [3, 4, 5, 6];
+      //   let c = [...a, ...b]   // -> to find union we use spread operator.
+
+      //   let A = new Set(a)
+      //   let B = new Set(b)
+      //   let C = new Set(c)
+
+      //   console.log(C)
+
+      // to find intersection & difference of sets we use filter method.
+      let a = [1, 2, 3, 4, 5];
+      let b = [3, 4, 5, 6];
+
+      let A = new Set(a);
+      let B = new Set(b);
+
+      //   let c = a.filter((n)=>B.has(n))    // to find intersection of two sets
+      let c = a.filter((n) => !B.has(n)); // to find difference of two sets
+      let C = new Set(c);
+      //   console.log(C)
+
+      // Map in JavaScript
+      const map = new Map();
+      //   console.log(map);
+
+    //   countries = [
+    //     ["Finland", "Helsinki"],
+    //     ["Sweden", "Stockholm"],
+    //     ["Norway", "Oslo"],
+    //   ];
+
+    //   const mapCountries = new Map(countries);
+      //   console.log(mapCountries)
+      //   console.log(mapCountries.size)
+
+    //   mapCountries.set("India", "Delhi");
+      // console.log(mapCountries)
+      // console.log(mapCountries.get("Finland"))
+
+      // EXERCISE SECTION:
+
+      const numb = new Set();
+      //   console.log(numb)
+      let i = 1;
+      while (i < 11) {
+        numb.add(i);
+        i += 1;
+      }
+      // console.log(numb)
+      numb.delete(2);
+      // console.log(numb)
+      numb.clear();
+      // console.log(numb)
+
+      const num1 = [4, 5, 8, 9];
+      const num2 = [3, 4, 5, 7];
+      const countries = [["Finland", "Helsinki"], ["Sweden", "abc"], ["Norway", "xyz"]];
+
+      const countriesMap = new Map(countries)
+    //   console.log(countriesMap)
+    const count1 = []
+    const counts1 = {}
+    for(const ele of countries){
+        const lengthEle = countries.filter((ele)=>ele.length)
+        count1.push({country: ele, len: lengthEle.length})
+        
+    }
+    console.log(count1)
+    // console.log(lengthEle)
+    </script>
+  </body>
+</html>
